@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "outDir": "dist",
+    "rootDir": "src",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "baseUrl": "."
+  },
+  "include": ["src", "astro.config.ts"],
+  "references": [
+    { "path": "../../packages/types" },
+    { "path": "../../packages/api-client" },
+    { "path": "../../packages/shared" }
+  ]
+}
